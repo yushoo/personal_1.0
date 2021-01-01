@@ -1,7 +1,16 @@
+import "./Landing.css";
+import me from "./me.jpg";
 export default function Landing() {
   return (
     <div>
-      <p>Hello, my name is Henry Feng</p>
+      <div className="parent">
+        <h1 className="child">Henry Feng</h1>
+      </div>
+      <div>
+        <div className="photoContainer">
+          <img className="photo" src={me} />
+        </div>
+      </div>
     </div>
   );
 }
