@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./App.css";
+// import "./App.css";
 // Pages
 import Sandbox from "./pages/Sandbox";
 import Landing from "./pages/Landing";
+import Content from "./pages/Content";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         </Route>
         <Route path="/">
           <Landing />
+          <Content />
         </Route>
       </Switch>
     </Router>

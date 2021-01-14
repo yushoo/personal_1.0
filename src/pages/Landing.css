@@ -1,22 +1,20 @@
 .parent {
-  margin-top: 5%;
-  height: 10.2vw;
+  height: 100vh;
   text-align: center;
-  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
 }
 
 .child {
-  /* height: 100%; */
   display: inline-flex;
   transition: trasform 1s ease-in;
   animation: up-down 1s ease-in-out forwards infinite alternate;
-  /* align-items: center; */
 }
 
-.parent:hover .child {
-  /* animation: up-down 1s ease-in forwards infinite alternate; */
+/* .parent:hover .child {
+  animation: up-down 1s ease-in forwards infinite alternate;
   animation-play-state: paused;
-}
+} */
 
 @keyframes up-down {
   0% {
@@ -24,7 +22,7 @@
   }
 
   100% {
-    transform: rotate(90deg) translateX(4%);
+    transform: rotate(90deg) translateX(10%);
   }
 }
 
@@ -33,16 +31,21 @@
 }
 
 .photo {
-  height: 15%;
-  width: 15%;
+  height: 15em;
 }
 
 .rightArrow {
-  height: 30%;
-  width: 30%;
+  margin-top: 10%;
+  height: 5em;
   transform: rotate(90deg);
 }
 
 .rightArrow:hover {
   cursor: pointer;
+}
+
+.title {
+  font-size: 200%;
+  font-weight: bold;
+  margin: 5%;
 }
