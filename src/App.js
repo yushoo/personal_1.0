@@ -14,7 +14,6 @@ function App() {
         </Route>
         <Route path="/">
           <Landing />
-          <Content />
         </Route>
       </Switch>
     </Router>

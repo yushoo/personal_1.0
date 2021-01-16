@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .parent {
   height: 100vh;
   text-align: center;
@@ -30,12 +34,17 @@
   text-align: center;
 }
 
+.photoSocials {
+  margin-top: 2%;
+  height: 3em;
+}
+
 .photo {
   height: 15em;
 }
 
 .rightArrow {
-  margin-top: 10%;
+  margin-top: 8%;
   height: 5em;
   transform: rotate(90deg);
 }
@@ -47,5 +56,6 @@
 .title {
   font-size: 200%;
   font-weight: bold;
-  margin: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
