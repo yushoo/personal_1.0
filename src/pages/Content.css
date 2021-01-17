@@ -1,3 +1,24 @@
-.parentContent {
+.contentParent {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu {
+  /* margin-top: 2em; */
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu span {
+  margin: 1%;
+  font-size: 200%;
+  font-weight: bolder;
+}
+
+.menu span:hover {
+  cursor: pointer;
+  color: gray;
 }

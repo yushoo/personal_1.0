@@ -9,12 +9,14 @@ import Content from "./Content";
 export default function Landing() {
   return (
     <>
+      {/* landing */}
       <section>
         <div className="parent">
+          {/* title/brief description */}
           <span className="title">Henry Feng</span>
           <div className="photoContainer">
             <img className="photo" src={me} />
-
+            {/* social media icons*/}
             <div className="socials">
               <a
                 target="_blank"
@@ -25,6 +27,7 @@ export default function Landing() {
               </a>
             </div>
           </div>
+          {/* smooth scroll button */}
           <div className="">
             <a href="#content">
               <img
@@ -37,6 +40,8 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
+      {/* content */}
       <section id="content">
         <Content id="content" />
       </section>
