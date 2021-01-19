@@ -1,7 +1,8 @@
 import * as React from "react";
 import axios from "axios";
-import "./Sandbox.css";
+import resume from "./media/resume.pdf";
 
+import "./Sandbox.css";
 const { useEffect, useState } = React;
 
 interface UserName {
@@ -44,6 +45,13 @@ export default function Sandbox() {
   const [userInfos, setUserInfos] = useState([]);
   const [randomUserDataJSON, setRandomUserDataJSON] = useState("");
 
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
   const fetchNextUser = async () => {
     async function fetchRandomUserData() {
       const randomData = await fetchRandomData();
@@ -65,6 +73,8 @@ export default function Sandbox() {
 
   return (
     <div className="container">
+      {/* <Document file={resume} onLoadError={console.error} /> */}
+      <embed src={resume} width="800px" height="1100px" />
       <h1>In Sandbox</h1>
       <h2>The basics</h2>
       <div>
